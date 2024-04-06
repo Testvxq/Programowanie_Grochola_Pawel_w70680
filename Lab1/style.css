@@ -1,0 +1,50 @@
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+
+header, nav {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+section, aside{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px;
+} 
+
+.formSection {
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+a:hover {
+    color: red;
+}
