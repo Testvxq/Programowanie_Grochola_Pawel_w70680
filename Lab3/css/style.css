@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 2px #aaa;
+    padding: 20px 120px;
+    z-index: 100;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    float: left;
+  }
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+li a:hover {
+    color: red;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+article, section {
+    display: block;
+    padding: 0, 120px;
+    margin: 20px 100px;
+    font-size: 20px;
+}
+
+article {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px, 120px;
+}
+
+article .article-element {
+    width: 50%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+section .left, section .right {
+    width: 40%;
+    border: 2px solid lightgray;
+    padding: 20px 120px;
+}
+
+section .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(84, 84, 87);
+    text-align: center;
+    padding: 25px 0;
+}
+
+#js, #poleFigury, #dodawanie, #max, #nwd, #clock {
+    text-align: center;
+    margin: 20px;
+}
