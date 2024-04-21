@@ -53,8 +53,7 @@ c = Number(prompt("Podaj długość boku 3"))
 let max = Math.max(a, b, c);
 
 
-
-if(max < ((a+b+c)-max)) {
+if((a+b+c)-max > max) {
     let p = (a+b+c)/2
     let wynik = Math.sqrt(p*(p-a)*(p-b)*(p-c));
     
