@@ -46,21 +46,33 @@ for (let index = 0; index <= 100; index += 2) {
     console.log(index)
 }
 
-a = 2
-b = 3
-c = 4
-let p = a*b*c
-let wynik = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+a = Number(prompt("Podaj długość boku 1"))
+b = Number(prompt("Podaj długość boku 2"))
+c = Number(prompt("Podaj długość boku 3"))
+
+let max = Math.max(a, b, c);
 
 
-console.log(`Pole wynosi: ${wynik}`)
-document.getElementById("poleFigury").innerHTML = (`Pole figury wynosi ${wynik}`)
+
+if(max < ((a+b+c)-max)) {
+    let p = (a+b+c)/2
+    let wynik = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+    
+    
+    console.log(`Pole wynosi: ${wynik}`)
+    document.getElementById("poleFigury").innerHTML = (`Pole figury wynosi ${wynik}`)
+} else {
+    console.log(`Nie mozna obliczyc pola figury, podano złe dlugosci bokow!`)
+    document.getElementById("poleFigury").innerHTML = (`Nie mozna obliczyc pola figury, podano złe dlugosci bokow!`)
+}
+
+
 
 let person = prompt("Please enter your name", "Your Name");
 alert(`Hello ${person}!!!`)
 
-a = Number(prompt("Dodawanie: Podaj liczbe A"))
-b = Number(prompt("Dodawanie: Podaj liczbe B"))
+a = prompt("Dodawanie: Podaj liczbe A")
+b = prompt("Dodawanie: Podaj liczbe B")
 
 
 document.getElementById("dodawanie").innerHTML = (`Wynik dodawania dwoch liczb to: ${a + b}`)
@@ -69,7 +81,7 @@ a = prompt("Najwieksza liczba: Podaj liczbe A")
 b = prompt("Najwieksza liczba: Podaj liczbe B")
 c = prompt("Najwieksza liczba: Podaj liczbe C")
 
-const max = Math.max(a, b, c);
+max = Math.max(a, b, c);
 
 console.log(`Najwieksza liczb z podanych to: ${max}`)
 document.getElementById("max").innerHTML = (`Najwieksza liczba to: ${max}`)
