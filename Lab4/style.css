@@ -1,5 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 button {
     border-radius: 5px;
     width: 100px;
-    height: 25px;
+    margin: 10px;
+}
+
+#textbox {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+.default-bg {
+    background-color: white;
+  }
+.clicked-bg {
+    background-color: yellow;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd;
+    padding: 8px; 
+    text-align: left; 
+}
+
+
+td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
 }

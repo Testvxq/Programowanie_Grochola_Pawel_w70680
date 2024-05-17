@@ -8,9 +8,42 @@
 </head>
 <body>
 <main id="main">
-    <button >Przycisk 1</button>
-    <button >Przycisk 2</button>
-    <button >Przycisk 3</button>
+    <button id="displayChange" class="changeColor">Widoczność</button>
+    <button onclick="addToList()" class="changeColor">Dodaj do listy</button>
+    <button onclick="addToTable()" class="changeColor">Dodaj do tabeli</button>
+
+    <div id="textbox">
+        <input type="text" id="textInput" placeholder="Wartość do listy">
+        
+        <ul id="list"></ul>
+
+        <input type="text" id="nameInput" placeholder="Imię">
+        <input type="text" id="surnameInput" placeholder="Nazwisko">
+
+        <br>
+        <br>
+        <table id="personTable">
+          <thead>
+            <tr>
+              <th>Imię</th>
+              <th>Nazwisko</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+
+        <h2>Konwerter temperatury</h2>
+        <label for="celsiusInput">Stopnie Celsiusza:</label>
+        <input type="number" id="celsiusInput" placeholder="0">
+        <button onclick="convertToFar()">C -> F</button>
+        <div id="result1"></div>
+        <br>
+        <label for="fahrenheitInput">Stopnie Fahrenheita:</label>
+        <input type="number" id="fahrenheitInput" placeholder="0">
+        <button onclick="convertToCel()">F -> C</button>
+        <div id="result2"></div>
+
+    </div>
 </main>
 </body>
 <script src="scripts.js"></script>
