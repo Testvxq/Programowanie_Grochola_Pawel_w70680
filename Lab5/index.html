@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" name="form" onsubmit="validateForm()">
+        <label for="">Imie</label>
+        <input type="text" name="name" id="" required><br> 
+
+        <label for="">Nazwisko</label>
+        <input type="text" name="" id="" required><br>
+        
+        <label for="">E-mail</label>
+        <input type="email" name="" id="" required><br>
+
+        <label for="">Hasło</label>
+        <input type="password" name="" id="" minlength="8" required><br>
+
+        <label for="">Płeć</label>
+        <label><input type="radio" name="gender" id="" >Kobieta</label>
+        <label><input type="radio" name="gender" id="" required>Mężczyzna</label><br>
+
+        <label for="">Telefon</label>
+        <input type="number" name="" id="" required><br>
+
+        <label for="">Data urodzenia</label>
+        <input type="date" name="" id="" required><br>
+
+        <label for="">Kraj</label>
+        <select id="cars" name="cars" required>
+            <option value="" disabled selected hidden></option>
+            <option value="Polska">Polska</option>
+            <option value="Ukraina">Ukraina</option>
+            <option value="Słowacja">Słowacja</option>
+            <option value="Czechy">Czechy</option>
+        </select><br>
+
+        <input type="submit" value="Wyślij dane">
+
+    </form>
+</body>
+<script src="scripts.js"></script>
+</html>

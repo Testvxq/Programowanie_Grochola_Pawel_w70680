@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgb(237, 239, 241);
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type = "submit"] {
+    background-color: rgb(117, 124, 129);
+    border-radius: 5px;
+}
