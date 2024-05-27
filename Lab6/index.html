@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form id="myForm" action="">
+            <label for="name">Imię:</label><br>
+            <input type="text" name="name" id="name" maxlength="100"><br>
+            
+            <label for="lastName">Nazwisko:</label><br>
+            <input type="text" name="lastName" id="lastName" required><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            
+            <label for="password">Hasło:</label><br>
+            <input type="password" name="password" id="password" minlength="8"><br>
+
+            <label for="password">Powtórz hasło:</label><br>
+            <input type="password" name="password2" id="password2" minlength="8"><br>
+            
+            <label for="gender">Płeć</label>
+            <label><input type="radio" name="gender" id="gender" value="Kobieta">Kobieta</label>
+            <label><input type="radio" name="gender" id="gender" value="Mężczyzna" required>Mężczyzna</label><br>
+            
+            <label for="telephone">Telefon:</label><br>
+            <input type="text" name="telephone" id="telephone"><br>
+
+            <label for="date">Data urodzenia:</label><br>
+            <input class="date" type="date" name="date" id="date" required><br>
+
+            <label for="country">Kraj</label><br>
+            <select class="styled-select" id="country" name="country" required >
+                <option value="" disabled selected hidden></option>
+                <option value="Polska">Polska</option>
+                <option value="Ukraina">Ukraina</option>
+                <option value="Słowacja">Słowacja</option>
+                <option value="Czechy">Czechy</option>
+            </select><br>
+
+            <label for="">Województwo:</label>
+            <select class="styled-select" id="province" name="province" disabled>
+                <option value="" disabled selected hidden></option>
+                <option value="Podkarpacie">Podkarpaskie</option>
+                <option value="Podlasie">Podlasie</option>
+                <option value="Lubelskie">Lubelskie</option>
+                <option value="Małopolskie">Małopolskie</option>
+            </select><br>
+
+            <input type="text" name="provinceText" id="provinceText" style="display: none;"><br>
+
+            <label for="adres">Adres zamieszkania:</label><br>
+            <input type="text" name="adres" id="adres" disabled required><br>
+
+            <label class="adres2"><input type="checkbox" name="adresBox" id="adresBox" checked> Adres korespondencyjny taki sam jak zamieszkania </label><br>
+
+            <div id="adres2" style="display: none;">
+                <label for="">Adres korespondencyjny:</label><br>
+                <input type="text" name="adresSecond" id="adresSecond">
+            </div>
+
+            <p id="error"></p>
+            <p id="message"></p>
+            <br><input type="submit" value="Zapisz">
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
